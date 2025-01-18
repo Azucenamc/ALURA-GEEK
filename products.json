@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Goku",
+        "price": "$10",
+        "image": "FGOKU.jpg"
+    },
+    
+    {
+        "name": "NARUTO",
+        "price": "$10",
+        "image": "FNARUTO.jpg"
+    },
+    {
+        "name": "PINGUINO",
+        "price": "$10",
+        "image": "FPINGUINO.jpg"
+    },
+    {
+        "name": "VENOM",
+        "price": "$10",
+        "image": "FVENOM.jpg"
+    },
+    {
+        "name": "Mario",
+        "price": "$10",
+        "image": "FBMARIO.jpg"
+    },
+   
+    {
+        "name": "Malefica",
+        "price": "$30",
+        "image": "FMALEFICA.jpg"
+    },
+    {
+        "name": "Minion",
+        "price": "$40",
+        "image": "FMINION.jpg"
+    }
+   
+]

@@ -1,0 +1,432 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    color: #333;
+}
+
+/* Header */
+
+.header {
+    background: linear-gradient(135deg, #4a148c, #6a1b9a);
+    padding: 1rem 0;
+    color: white;
+    border-bottom: 3px solid #00acc1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: #00acc1;
+    font-style: italic;
+}
+
+/* Navigation */
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin: 0;
+}
+
+.nav-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #00acc1;
+}
+
+/* Main content */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.left-column {
+    flex: 1;
+    margin-top: 1rem;
+}
+
+.right-column {
+    flex: 3;
+    margin-top: 1rem;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #4a148c;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.search-bar {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Product list */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.product-list p {
+    width: 100%;
+    text-align: center;
+    color: #666;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.product {
+    background: linear-gradient(135deg, #4db6ac, #00897b);
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.product h3 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.product p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.delete-icon {
+    width: 40px;
+    height: 20px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.delete-icon:hover {
+    width: 80px;
+    height: 80px;
+}
+
+/* Add Product Section */
+
+.add-product-section {
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+    border: 1px solid #bbb;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.add-product-section .form-group {
+    margin-bottom: 1rem;
+}
+
+.add-product-section .form-group label {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    display: block;
+    color: #333;
+}
+
+.add-product-section .form-group input[type="text"],
+.add-product-section .form-group input[type="email"],
+.add-product-section .form-group textarea {
+    width: 85%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.add-product-section .form-group input[type="text"]:focus,
+.add-product-section .form-group input[type="email"]:focus,
+.add-product-section .form-group textarea:focus {
+    border-color: #4a148c;
+}
+
+.add-product-section button[type="submit"],
+.add-product-section button[type="button"] {
+    background-color: #4a148c;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-product-section button[type="submit"]:hover,
+.add-product-section button[type="button"]:hover {
+    background-color: #6a1b9a;
+}
+
+/* Contact Section */
+
+.contact-container {
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 1rem auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #4a148c;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.email-image {
+    width: 40px;
+    height: 40px;
+}
+
+#contactForm {
+    display: none;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    display: block;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #4a148c;
+}
+
+button[type="submit"] {
+    background-color: #4a148c;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #6a1b9a;
+}
+
+/* Footer */
+
+.footer {
+    background: linear-gradient(135deg, #4a148c, #6a1b9a);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-logo {
+    width: 75px;
+    height: 50px;
+}
+
+/* Media Queries */
+
+/* Tablets y Dispositivos de Menor Ancho */
+
+@
+/* Media Queries */
+
+/* Tablets y Dispositivos de Menor Ancho */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .left-column, .right-column {
+        flex: 1;
+    }
+    .search-bar input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-list a {
+        font-size: 0.875rem;
+    }
+    .product {
+        max-width: 200px;
+    }
+    .add-product-section .form-group input[type="text"],
+    .add-product-section .form-group input[type="email"],
+    .add-product-section .form-group textarea,
+    #contactForm .form-group input[type="text"],
+    #contactForm .form-group input[type="email"],
+    #contactForm .form-group textarea {
+        width: 100%;
+        font-size: 0.875rem;
+    }
+    .add-product-section button[type="submit"],
+    .add-product-section button[type="button"],
+    #contactForm button[type="submit"] {
+        font-size: 0.875rem;
+    }
+}
+
+/* Smartphones y Dispositivos de Menor Ancho */
+@media (max-width: 480px) {
+    .logo-image {
+        width: 40px;
+        height: 40px;
+    }
+    .logo {
+        font-size: 1.25rem;
+    }
+    .nav-list a {
+        font-size: 0.75rem;
+    }
+    .product {
+        max-width: 150px;
+    }
+    h1, h2 {
+        font-size: 1.25rem;
+    }
+    .search-bar input {
+        width: 100%;
+    }
+    .add-product-section .form-group input[type="text"],
+    .add-product-section .form-group input[type="email"],
+    .add-product-section .form-group textarea,
+    #contactForm .form-group input[type="text"],
+    #contactForm .form-group input[type="email"],
+    #contactForm .form-group textarea {
+        font-size: 0.75rem;
+    }
+    .add-product-section button[type="submit"],
+    .add-product-section button[type="button"],
+    #contactForm button[type="submit"] {
+        font-size: 0.75rem;
+    }
+}
